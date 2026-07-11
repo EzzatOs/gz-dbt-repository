@@ -10,7 +10,7 @@ sources:
            identifier: raw_gz_product
            description: raw data for product
          - name: sales
-           identifier: raw data for sales
+           identifier: raw_gz_sales
            description: raw data for sales
          - name: ship
            identifier: raw_gz_ship
