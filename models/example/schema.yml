@@ -25,13 +25,15 @@ sources:
             description: date of purchase
           - name: orders_id
             description: id ref per each order
-          - name: products_id
+          - name: pdt_id
             description: id per each product sold
           - name: revenue
             description: revenue per each product
           - name: quantity
             description: quantity per each product sold
-        
+        tests:
+          - unique:
+              column_name: "(orders_id || '-' || pdt_id)"
           
       - name: ship
         identifier: raw_gz_ship
