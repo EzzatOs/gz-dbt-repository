@@ -21,6 +21,10 @@ sources:
          - name: sales
            identifier: raw_gz_sales
            description: raw data for sales
+           tests:
+             - unique:
+                 column_name: "(orders_id || '-' || products_id)"
+           
            columns:
              - name: date_date
                description: date of purchase
