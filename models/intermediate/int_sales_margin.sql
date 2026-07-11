@@ -1,6 +1,6 @@
 SELECT 
 orders_id,
-date_date,
+CAST(date_date AS DATE) AS date_date,
 (quantity * purchase_price) AS purchase_cost,
 (revenue - purchase_price) AS margin
 FROM 
