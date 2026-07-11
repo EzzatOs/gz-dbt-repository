@@ -11,4 +11,3 @@ JOIN
 {{ ref('stg_raw__sales') }}
 USING (orders_id)
 GROUP BY orders_id
-ORDER BY orders_id
