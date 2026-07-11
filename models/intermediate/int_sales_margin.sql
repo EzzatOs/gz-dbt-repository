@@ -1,4 +1,6 @@
-SELECT *
+SELECT 
+(quantity * purchase_price) AS purchase_cost,
+(revenue - purchase_price) AS margin
 FROM 
 {{ ref('stg_raw__sales') }}
 JOIN
