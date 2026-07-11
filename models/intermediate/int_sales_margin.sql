@@ -1,4 +1,5 @@
 SELECT 
+orders_id,
 (quantity * purchase_price) AS purchase_cost,
 (revenue - purchase_price) AS margin
 FROM 
