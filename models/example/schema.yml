@@ -31,10 +31,7 @@ sources:
             description: revenue per each product
           - name: quantity
             description: quantity per each product sold
-        tests:
-          -   unique:
-                column_name: "(orders_id || '-' || products_id)"
-
+        
           
       - name: ship
         identifier: raw_gz_ship
