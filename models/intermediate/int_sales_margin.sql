@@ -1,10 +1,8 @@
-SELECT 
+select
     sa.revenue,
     sa.quantity,
     pdt.purchase_price,
-    (sa.quantity * pdt.purchase_price) AS purchase_cost,
-    (sa.revenue - (sa.quantity * pdt.purchase_price)) AS margin
-FROM {{ ref('stg_raw_sales') }} AS sa
-LEFT JOIN {{ ref('stg_raw_product') }} AS pdt
-    ON sa.products_id = pdt.products_id
-    
+    (sa.quantity * pdt.purchase_price) as purchase_cost,
+    (sa.revenue - (sa.quantity * pdt.purchase_price)) as margin
+from {{ ref("stg_raw_sales") }} as sa
+left join {{ ref("stg_raw_product") }} as pdt on sa.products_id = pdt.products_id
