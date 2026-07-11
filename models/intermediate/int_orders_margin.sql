@@ -1,7 +1,7 @@
 SELECT 
 orders_id,
 SUM(revenue) AS total_revenue,
-CASE(date_date AS DATE) AS date_date,
+date_date,
 SUM(quantity) AS quantity,
 SUM(purchase_cost) AS purchase_cost,
 SUM(margin) AS margin
