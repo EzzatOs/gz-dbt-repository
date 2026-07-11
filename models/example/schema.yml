@@ -9,11 +9,44 @@ sources:
          - name: product
            identifier: raw_gz_product
            description: raw data for product
+           columns:
+             - name: products_id
+               description: table unique_id
+               data_tests:
+                 -  unique
+                 -  not_null                
+             - name : purchase_price
+               description: purchase price per each item  
+
          - name: sales
            identifier: raw_gz_sales
            description: raw data for sales
+           columns:
+             - name: date_date
+               description: date of purchase
+             - name: orders_id
+               description: id ref per each order
+             - name: products_id
+               description: id per each product sold
+             - name: revenue
+               description: revenue per each product
+             - name: quantity
+               description: quantity per each product sold
+
          - name: ship
            identifier: raw_gz_ship
            description: raw data for ship
+           columns: 
+            - name: orders_id
+              description: id of each product shipped
+              data_tests:
+                -  unique
+                -  not_null         
+            - name: shipping_fee
+              description: shipping fee per each product shipped
+            - name: logcost 
+              description: logcost per each product shipped
+            - name: ship_cost
+              description: ship cost per each product shipped
 
       
