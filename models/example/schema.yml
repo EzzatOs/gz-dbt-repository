@@ -12,7 +12,7 @@ sources:
            columns:
              - name: products_id
                description: table unique_id
-               data_tests:
+               tests:
                  -  unique
                  -  not_null                
              - name : purchase_price
@@ -39,7 +39,7 @@ sources:
            columns: 
             - name: orders_id
               description: id of each product shipped
-              data_tests:
+              tests:
                 -  unique
                 -  not_null         
             - name: shipping_fee
