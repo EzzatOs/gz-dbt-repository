@@ -5,7 +5,7 @@ SUM(revenue) AS total_revenue,
 AVG(SUM(revenue), COUNT(orders_id)) AS avg_basket,
 Operational_margin,
 SUM(purchase_cost) AS total_purchase_cost,
-SUM(shipping_fee) AS total_shipping _fees,
+SUM(shipping_fee) AS total_shipping_fees,
 SUM(logcost) AS total_logcost,
 SUM(quantity) AS total_quantity_sold
 FROM 
