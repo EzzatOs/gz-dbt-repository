@@ -1,8 +1,8 @@
 SELECT 
 im.date_date,
 COUNT(DISTINCT im.orders_id) AS total_transactions,
-ROUND(SUM(pd.total_revenue),2) AS total_revenue,
-ROUND(SAFE_DIVIDE(SUM(pd.total_revenue), COUNT(DISTINCT im.orders_id)),2) AS avg_basket,
+ROUND(SUM(pd.revenue),2) AS total_revenue,
+ROUND(SAFE_DIVIDE(SUM(pd.revenue), COUNT(DISTINCT im.orders_id)),2) AS avg_basket,
 ROUND(AVG(pd.purchase_cost),2) AS avg_purchase_cost,
 ROUND(AVG(oo.shipping_fee),2) AS avg_shipping_fee,
 ROUND(AVG(oo.logcost),2) AS avg_logcost,
