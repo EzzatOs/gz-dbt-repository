@@ -14,4 +14,5 @@ JOIN {{ ref('int_orders_margin') }} AS pd
 USING(orders_id)
 JOIN {{ ref('int_orders_operational') }} AS oo
 USING(orders_id)
-GROUP BY date_date
+GROUP BY im.date_date
+ORDER BY im.date_date;
