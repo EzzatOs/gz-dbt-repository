@@ -1,9 +1,9 @@
 SELECT 
 orders_id,
-SUM(revenue) AS total_revenue,
+ROUND(SUM(revenue),2) AS total_revenue,
 SUM(quantity) AS quantity,
-SUM(purchase_cost) AS purchase_cost,
-SUM(margin) AS margin
+ROUND(SUM(purchase_cost),2) AS purchase_cost,
+ROUND(SUM(margin),2) AS margin
 FROM 
 {{ ref('int_sales_margin') }}
 JOIN 
