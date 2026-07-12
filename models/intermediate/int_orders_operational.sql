@@ -1,6 +1,7 @@
 SELECT 
 orders_id,
 date_date,
+shipping_fee,
 ROUND((margin + shipping_fee - logcost - ship_cost),2) AS Operational_margin
 FROM 
 {{ ref('int_sales_margin') }}
