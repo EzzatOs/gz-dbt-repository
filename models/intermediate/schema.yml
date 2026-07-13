@@ -51,7 +51,10 @@ sources:
           - name: ship_cost
             description: ship cost per each product shipped
 
-    
+models:
+  dbt_ezzat:
+    mart:
+      +materialized: table    
 
 
 
