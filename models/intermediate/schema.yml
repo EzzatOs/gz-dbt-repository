@@ -58,12 +58,15 @@ sources:
         columns:
           - name: date_date
             description: date of data
+            tests:
+              - unique
+              - not_null
           - name: paid_source
             description: info about paid source
           - name: campaign_key
             description: campaign_key
           - name: camPGN_name
-            description: campaign_key
+            description: campaign_name
           - name: ads_cost
             description: ads_cost
           - name: impression
@@ -78,12 +81,15 @@ sources:
         columns:
           - name: date_date
             description: date of data
+            tests:
+              - unique
+              - not_null
           - name: paid_source
             description: info about paid source
           - name: campaign_key
             description: campaign_key
           - name: camPGN_name
-            description: campaign_key
+            description: campaign_name
           - name: ads_cost
             description: ads_cost
           - name: impression
@@ -97,12 +103,15 @@ sources:
         columns:
           - name: date_date
             description: date of data
+            tests:
+              - unique
+              - not_null
           - name: paid_source
             description: info about paid source
           - name: campaign_key
             description: campaign_key
           - name: camPGN_name
-            description: campaign_key
+            description: campaign_name
           - name: ads_cost
             description: ads_cost
           - name: impression
@@ -117,12 +126,15 @@ sources:
         columns:
           - name: date_date
             description: date of data
+            tests:
+              - unique
+              - not_null
           - name: paid_source
             description: info about paid source
           - name: campaign_key
             description: campaign_key
           - name: camPGN_name
-            description: campaign_key
+            description: campaign_name
           - name: ads_cost
             description: ads_cost
           - name: impression
