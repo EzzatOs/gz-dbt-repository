@@ -72,7 +72,7 @@ sources:
             description: click
         tests:
           - unique:
-              column_name: "(click || '-' || impression)"
+              column_name: "(click|| '-' || impression)"
          
       - name: criteo
         identifier: raw_gz_criteo
@@ -94,8 +94,7 @@ sources:
             description: click 
         tests:
           - unique:
-              column_name: "(ads_cost || '-' || impression)"
-
+              column_name: "(click || '-' || impression )"
 
 
       - name: bing
@@ -140,4 +139,4 @@ sources:
             description: click       
         tests:
           - unique:
-              column_name: "(ads_cost || '-' || impression)"
+              column_name: "(click || '-' || impression)"
