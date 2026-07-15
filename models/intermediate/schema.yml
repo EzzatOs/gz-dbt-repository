@@ -139,3 +139,4 @@ sources:
         tests:
           - unique:
               column_name: "(date_date || '-' || campaign_key)"
+
