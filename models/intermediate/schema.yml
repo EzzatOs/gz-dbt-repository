@@ -94,8 +94,7 @@ sources:
             description: click 
         tests:
           - unique:
-              column_name: "(click || '-' || impression )"
-
+              column_name: "(click || '-' || impression)"
 
       - name: bing
         identifier: raw_gz_bing
