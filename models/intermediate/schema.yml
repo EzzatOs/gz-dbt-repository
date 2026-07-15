@@ -52,6 +52,80 @@ sources:
             description: ship cost per each product shipped
 
 
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: raw data for facebook
+        columns:
+          - name: date_date
+            description: date of data
+          - name: paid_source
+            description: info about paid source
+          - name: campaign_key
+            description: campaign_key
+          - name: camPGN_name
+            description: campaign_key
+          - name: ads_cost
+            description: ads_cost
+          - name: impression
+            description: impression
+          - name : click
+            description: click
 
 
-            
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: raw data for criteo
+        columns:
+          - name: date_date
+            description: date of data
+          - name: paid_source
+            description: info about paid source
+          - name: campaign_key
+            description: campaign_key
+          - name: camPGN_name
+            description: campaign_key
+          - name: ads_cost
+            description: ads_cost
+          - name: impression
+            description: impression
+          - name : click
+            description: click 
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: raw data for bing
+        columns:
+          - name: date_date
+            description: date of data
+          - name: paid_source
+            description: info about paid source
+          - name: campaign_key
+            description: campaign_key
+          - name: camPGN_name
+            description: campaign_key
+          - name: ads_cost
+            description: ads_cost
+          - name: impression
+            description: impression
+          - name : click
+            description: click 
+
+
+      - name: adwo
+        identifier: raw_gz_adwo
+        description: raw data for adwo
+        columns:
+          - name: date_date
+            description: date of data
+          - name: paid_source
+            description: info about paid source
+          - name: campaign_key
+            description: campaign_key
+          - name: camPGN_name
+            description: campaign_key
+          - name: ads_cost
+            description: ads_cost
+          - name: impression
+            description: impression
+          - name : click
+            description: click       
