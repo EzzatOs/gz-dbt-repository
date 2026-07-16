@@ -140,18 +140,18 @@ sources:
           - unique:
               column_name: "(date_date || '-' || campaign_key)"
 
-      - name: campaigns_day
-        identifier: int_campaigns_day
-        description: campaigns day
-        columns:
-          - name: date_date
-            description: date
-            tests:
-              - unique
-              - not_null
-          - name: ads_cost
-            description: ads cost
-          - name: click
-            description: click
-          - name: impression
-            description: mpression
+models: 
+  - name: int_campaigns_day
+    description: campaigns day
+    columns:
+      - name: date_date
+        description: date
+        tests:
+          - unique
+          - not_null
+      - name: ads_cost
+        description: ads cost
+      - name: click
+        description: click
+      - name: impression
+        description: mpression
