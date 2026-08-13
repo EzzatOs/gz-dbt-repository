@@ -14,6 +14,6 @@ ROUND(AVG(Operational_margin),2) AS avg_operational_margin,
 Operational_margin
 FROM 
  {{ ref('int_orders_operational') }} 
-GROUP BY date_date
+GROUP BY date_date, Operational_margin
 ORDER BY date_date
 
