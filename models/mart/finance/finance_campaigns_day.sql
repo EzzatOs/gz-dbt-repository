@@ -14,4 +14,5 @@ select
     (f.avg_logcost) as log_cost,
     (f.avg_shipping_fee) as ship_cost
 from {{ ref("finance_days") }} as f
-left join {{ ref("int_campaigns_day") }} as i using (date_date)
+left join {{ ref("int_campaigns_day") }} as i 
+using (date_date)
