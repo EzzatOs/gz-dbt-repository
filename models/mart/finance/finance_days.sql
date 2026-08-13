@@ -11,9 +11,9 @@ ROUND(AVG(shipping_fee),2) AS avg_shipping_fee,
 ROUND(AVG(logcost),2) AS avg_logcost,
 SUM(total_quantity) AS total_quantity_sold,
 ROUND(AVG(Operational_margin),2) AS avg_operational_margin,
-Operational_margin
+SUM(Operational_margin) AS Operational_margin
 FROM 
  {{ ref('int_orders_operational') }} 
-GROUP BY date_date, Operational_margin
+GROUP BY date_date
 ORDER BY date_date
 
