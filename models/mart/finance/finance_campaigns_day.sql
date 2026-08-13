@@ -1,8 +1,8 @@
 select
     f.date_date,
-    (f.avg_operational_margin - i.ads_cost) as ads_margin,
+    (f.Operational_margin - i.ads_cost) as ads_margin,
     f.avg_basket,
-    (f.avg_operational_margin) as operational_margin,
+    f.Operational_margin,
     i.ads_cost,
     (i.impression) as ads_impression,
     (i.click) as ads_click,
