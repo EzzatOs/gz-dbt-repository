@@ -1,6 +1,6 @@
 SELECT 
 f.date_date,
-f.avg_operational_margin - i.ads_cost) AS ads_margin,
+(f.avg_operational_margin - i.ads_cost) AS ads_margin,
 f.avg_basket,
 (f.avg_operational_margin) AS operational_margin,
 i.ads_cost,
