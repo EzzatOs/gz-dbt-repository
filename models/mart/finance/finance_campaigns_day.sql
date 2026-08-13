@@ -1,19 +1,17 @@
-SELECT 
-f.date_date,
-(f.avg_operational_margin - i.ads_cost) AS ads_margin,
-f.avg_basket,
-(f.avg_operational_margin) AS operational_margin,
-i.ads_cost,
-(i.impression) AS ads_impression,
-(i.click) AS ads_click,
-(f.total_quantity_sold) AS quantity,
-(f.total_revenue) AS revenue,
-(f.avg_purchase_cost) AS purchase_cost,
-(f.total_revenue - f.avg_purchase_cost) AS margin,
-(f.avg_shipping_fee) AS shipping_fee,
-(f.avg_logcost) AS log_cost,
-(f.avg_shipping_fee) AS ship_cost
-FROM {{ ref('finance_days') }} as f
-LEFT JOIN {{ ref('int_campaigns_day') }} AS i
-USING(date_date)
-
+select
+    f.date_date,
+    (f.avg_operational_margin - i.ads_cost) as ads_margin,
+    f.avg_basket,
+    (f.avg_operational_margin) as operational_margin,
+    i.ads_cost,
+    (i.impression) as ads_impression,
+    (i.click) as ads_click,
+    (f.total_quantity_sold) as quantity,
+    (f.total_revenue) as revenue,
+    (f.avg_purchase_cost) as purchase_cost,
+    (f.total_revenue - f.avg_purchase_cost) as margin,
+    (f.avg_shipping_fee) as shipping_fee,
+    (f.avg_logcost) as log_cost,
+    (f.avg_shipping_fee) as ship_cost
+from {{ ref("finance_days") }} as f
+left join {{ ref("int_campaigns_day") }} as i using (date_date)
